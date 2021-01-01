@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_address_addresses",
+  "info": {
+    "name": "address",
+    "icon": "home"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "LOGRADOURO",
+        "ENDERECO",
+        "NUMERO",
+        "COMPLEMENTO",
+        "BAIRRO",
+        "CIDADE",
+        "ESTADO",
+        "CEP"
+      ],
+      "unique": true
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

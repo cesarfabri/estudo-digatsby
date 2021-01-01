@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_item_items",
+  "info": {
+    "name": "item",
+    "icon": "sitemap",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "quantity": {
+      "type": "decimal",
+      "required": true
+    },
+    "value": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

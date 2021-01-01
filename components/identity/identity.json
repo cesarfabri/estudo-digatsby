@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_identity_identities",
+  "info": {
+    "name": "identity",
+    "icon": "indent",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "CNPJ",
+        "CPF",
+        "IE",
+        "RG"
+      ],
+      "required": true,
+      "unique": false
+    },
+    "value": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30,
+      "unique": true
+    }
+  }
+}

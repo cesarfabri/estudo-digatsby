@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movements",
+  "info": {
+    "name": "movement",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "datamov": {
+      "type": "date",
+      "required": true
+    },
+    "dataexp": {
+      "type": "date",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "receipt": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "item.item",
+      "required": true
+    },
+    "supplier": {
+      "model": "supplier",
+      "via": "movements"
+    }
+  }
+}
